@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -10,7 +11,7 @@ import { SearchComponent } from './components/header/search/search.component';
 import { UserStateComponent } from './components/header/user-state/user-state.component';
 import { LoginComponent } from './components/login/login.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { GalleryComponent } from './components/gallery/gallery.component';
+
 
 
 @NgModule({
@@ -23,12 +24,13 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     UserStateComponent,
     LoginComponent,
     FooterComponent,
-    GalleryComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
