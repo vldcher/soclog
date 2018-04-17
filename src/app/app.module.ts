@@ -10,6 +10,7 @@ import { LoginComponent } from './components/header/login/login.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CarriageComponent } from './components/header/carriage/carriage.component';
 import { SignUpComponent } from './components/header/sign-up/sign-up.component';
+import { FindRideComponent } from './components/find-ride/find-ride.component';
 
 
 
@@ -22,6 +23,7 @@ import { SignUpComponent } from './components/header/sign-up/sign-up.component';
     FooterComponent,
     CarriageComponent,
     SignUpComponent,
+    FindRideComponent,
   ],
   imports: [
     BrowserModule,
