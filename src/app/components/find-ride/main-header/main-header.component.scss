@@ -1,0 +1,11 @@
+.mainHeaderWrapper {
+    display: flex;
+    justify-content: center;
+
+    .mainHeader {
+        font-size: 68px;
+        text-align: center;
+        letter-spacing: 5px;
+        color: #fff;
+    }
+}

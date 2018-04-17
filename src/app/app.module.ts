@@ -11,6 +11,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CarriageComponent } from './components/header/carriage/carriage.component';
 import { SignUpComponent } from './components/header/sign-up/sign-up.component';
 import { FindRideComponent } from './components/find-ride/find-ride.component';
+import { MainHeaderComponent } from './components/find-ride/main-header/main-header.component';
+import { SubheaderComponent } from './components/find-ride/subheader/subheader.component';
 
 
 
@@ -24,6 +26,8 @@ import { FindRideComponent } from './components/find-ride/find-ride.component';
     CarriageComponent,
     SignUpComponent,
     FindRideComponent,
+    MainHeaderComponent,
+    SubheaderComponent,
   ],
   imports: [
     BrowserModule,
