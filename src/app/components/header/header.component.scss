@@ -1,4 +1,11 @@
 .header-wrapper {
   display: flex;
+  justify-content: space-around;
+  padding: 25px;
+  // background-color: #5fa6bf;
+  color: #000;
+}
+.controls-wrapper {
+  display: flex;
   justify-content: space-between;
 }

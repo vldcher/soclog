@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LocalizationComponent } from './localization.component';
+import { CarriageComponent } from './carriage.component';
 
-describe('LocalizationComponent', () => {
-  let component: LocalizationComponent;
-  let fixture: ComponentFixture<LocalizationComponent>;
+describe('CarriageComponent', () => {
+  let component: CarriageComponent;
+  let fixture: ComponentFixture<CarriageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LocalizationComponent ]
+      declarations: [ CarriageComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LocalizationComponent);
+    fixture = TestBed.createComponent(CarriageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
