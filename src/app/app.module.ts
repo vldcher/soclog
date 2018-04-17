@@ -5,12 +5,11 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { LocalizationComponent } from './components/header/localization/localization.component';
 import { LogoComponent } from './components/header/logo/logo.component';
-import { SearchComponent } from './components/header/search/search.component';
-import { UserStateComponent } from './components/header/user-state/user-state.component';
 import { LoginComponent } from './components/login/login.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CarriageComponent } from './components/header/carriage/carriage.component';
+import { SignUpComponent } from './components/header/sign-up/sign-up.component';
 
 
 
@@ -18,12 +17,11 @@ import { FooterComponent } from './components/footer/footer.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    LocalizationComponent,
     LogoComponent,
-    SearchComponent,
-    UserStateComponent,
     LoginComponent,
     FooterComponent,
+    CarriageComponent,
+    SignUpComponent,
   ],
   imports: [
     BrowserModule,
