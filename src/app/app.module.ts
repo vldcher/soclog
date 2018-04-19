@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 
+
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
@@ -20,6 +21,9 @@ import { FineRideFormComponent } from './components/find-ride/fine-ride-form/fin
 import { RideOfferComponent } from './components/ride-offer/ride-offer.component';
 import { OfferDetailsComponent } from './components/offer-details/offer-details.component';
 import { HomeComponent } from './components/home/home.component';
+import { OfferProgressLineComponent } from './components/offer-details/offer-progress-line/offer-progress-line.component';
+import { OfferDescriptionComponent } from './components/offer-details/offer-description/offer-description.component';
+import { OfferMapComponent } from './components/offer-details/offer-map/offer-map.component';
 
 @NgModule({
 
@@ -38,6 +42,9 @@ import { HomeComponent } from './components/home/home.component';
     RideOfferComponent,
     OfferDetailsComponent,
     HomeComponent,
+    OfferProgressLineComponent,
+    OfferDescriptionComponent,
+    OfferMapComponent,
   ],
   imports: [
     BrowserModule,
