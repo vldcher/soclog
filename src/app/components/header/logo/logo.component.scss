@@ -5,4 +5,8 @@ img {
 .logo {
     color: #478eda;
     font-style: italic;
+    font-size: 36px;
+    &:hover {
+        text-decoration: none;
+    }
 }
