@@ -14,6 +14,7 @@ import { FindRideComponent } from './components/find-ride/find-ride.component';
 import { MainHeaderComponent } from './components/find-ride/main-header/main-header.component';
 import { SubheaderComponent } from './components/find-ride/subheader/subheader.component';
 import { FineRideFormComponent } from './components/find-ride/fine-ride-form/fine-ride-form.component';
+import { RideOfferComponent } from './components/ride-offer/ride-offer.component';
 
 
 
@@ -30,6 +31,7 @@ import { FineRideFormComponent } from './components/find-ride/fine-ride-form/fin
     MainHeaderComponent,
     SubheaderComponent,
     FineRideFormComponent,
+    RideOfferComponent,
   ],
   imports: [
     BrowserModule,

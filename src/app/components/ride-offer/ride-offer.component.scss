@@ -1,0 +1,41 @@
+.ride-offer-wrapper {
+    display: flex;
+    .ride-offer {
+        margin: auto;
+        padding: 100px 50px;
+        display: flex;
+        flex-direction: row;
+        &-img {
+            margin-right: 80px;
+            img {
+
+            }
+            
+        }
+        &-action {
+            display: flex;
+            flex-direction: column;
+            
+           &__header {
+                margin-top: 40px;
+                h3 {
+                    font-size: 42px;
+                }
+            }
+            &__paragraph {
+                margin-top: 40px;
+                h6 {
+                    font-size: 18px;
+                }
+            }
+            &__offer-button {
+                margin-top: 40px;
+
+                .offerButton {
+                    padding: 10px 50px;
+                }
+            }  
+        }
+        
+    }
+}
