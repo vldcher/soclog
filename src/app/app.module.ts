@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
+import { AppRoutingModule } from './app-routing.module';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
@@ -15,10 +18,11 @@ import { MainHeaderComponent } from './components/find-ride/main-header/main-hea
 import { SubheaderComponent } from './components/find-ride/subheader/subheader.component';
 import { FineRideFormComponent } from './components/find-ride/fine-ride-form/fine-ride-form.component';
 import { RideOfferComponent } from './components/ride-offer/ride-offer.component';
-
-
+import { OfferDetailsComponent } from './components/offer-details/offer-details.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
+
   declarations: [
     AppComponent,
     HeaderComponent,
@@ -32,9 +36,12 @@ import { RideOfferComponent } from './components/ride-offer/ride-offer.component
     SubheaderComponent,
     FineRideFormComponent,
     RideOfferComponent,
+    OfferDetailsComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     NgbModule.forRoot()
   ],
   providers: [],
