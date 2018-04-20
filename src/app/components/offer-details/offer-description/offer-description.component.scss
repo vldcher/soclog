@@ -1,0 +1,23 @@
+.offerForm {
+    background-color: #fff3e6;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid#9a6356;
+    min-width: 480px;
+    .formHeader {
+        font-size: 22px;
+        padding: 10px;
+    }
+    .form-group {
+        .form__labels {
+            font-size: 18px;
+            color: #137ea8;
+        }
+        .addStopOver {
+            color: 	#9a6356;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

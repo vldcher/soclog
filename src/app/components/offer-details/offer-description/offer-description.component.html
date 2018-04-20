@@ -1,21 +1,35 @@
-<form>
+<form class="offerForm">
+  <h6 class="formHeader">Pick-up & drop-off</h6>
+  <hr>
   <div class="form-group">
-    <label for="exampleInputEmail1">Pick-up</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Example: Kyiv">
+    <label class="form__labels" for="pickUp">Pick-up</label>
+    <input type="text" class="form-control" id="fromPoint" aria-describedby="emailHelp" placeholder="Example: Kyiv">
     <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Drop-off</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Example: Lviv">
+    <label class="form__labels" for="DropOff">Drop-off</label>
+    <input type="text" class="form-control" id="toPoint" placeholder="Example: Lviv">
   </div>
-  <!-- <div class="input-group">
-      <input class="form-control" placeholder="yyyy-mm-dd"
-             name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
-      <div class="input-group-append">
-        <button class="btn btn-outline-secondary" (click)="d.toggle()" type="button">
-          <img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/>
-        </button>
-      </div>
-    </div> -->
+
+  <div class="form-group">
+    <label class="form__labels" for="DropOff" placement="right" ngbTooltip="A city where you can pick up or drop off cargo along the way.">Stopovers:</label>
+    <p>Now add your stopover points - offering to pick up and drop off cargo along
+      <br> the way is a sure way to fill your car.</p>
+    <input type="text" class="form-control" id="stopOverPoint" placeholder="Drive through: Rivne">
+    <p class="addStopOver">+ add more stopover points</p>
+  </div>
+
+  <h6 class="formHeader">Date & time</h6>
+  <hr>
+  <div class="form-group">
+    <label class="form__labels" for="pickUp">Departure date/time:</label>
+    <input id="datetime" class="form-control" type="datetime-local">
+  </div>
+  <div class="form-group">
+    <label class="form__labels" for="pickUp">Arrived date/time:</label>
+    <input id="datetimeFinish" class="form-control" type="datetime-local">
+  </div>
+
+
   <button type="submit" class="btn btn-primary">Continue</button>
 </form>
