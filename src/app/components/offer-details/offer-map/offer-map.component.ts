@@ -11,7 +11,14 @@ export class OfferMapComponent implements OnInit {
   title: 'My first AGM project';
   lat = 51.678418;
   lng = 7.809007;
-  // constructor() { }
+  locationChosen = false;
+
+  onChoseLocation(event) {
+    this.lat = event.coords.lat;
+    this.lng = event.coords.lng;
+    this.locationChosen = true;
+  }
+  constructor() { }
 
   ngOnInit() {
   }
