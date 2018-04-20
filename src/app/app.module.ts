@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { AgmCoreModule } from '@agm/core';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LogoComponent } from './components/header/logo/logo.component';
@@ -48,7 +50,10 @@ import { OfferMapComponent } from './components/offer-details/offer-map/offer-ma
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDMwof2kUaCcA944HOuQ-dkYyU_IoOvI_Y'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

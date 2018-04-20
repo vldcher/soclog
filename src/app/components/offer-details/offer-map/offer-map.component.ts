@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AgmCoreModule } from '@agm/core';
 
 @Component({
   selector: 'app-offer-map',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OfferMapComponent implements OnInit {
 
-  constructor() { }
+  title: 'My first AGM project';
+  lat = 51.678418;
+  lng = 7.809007;
+  // constructor() { }
 
   ngOnInit() {
   }
