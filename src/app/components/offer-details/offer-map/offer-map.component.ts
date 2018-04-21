@@ -9,8 +9,8 @@ import { AgmCoreModule } from '@agm/core';
 export class OfferMapComponent implements OnInit {
 
   title: 'My first AGM project';
-  lat = 51.678418;
-  lng = 7.809007;
+  lat = 50.45466;
+  lng = 30.5238;
   // constructor() { }
 
   ngOnInit() {

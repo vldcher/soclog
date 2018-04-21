@@ -25,6 +25,8 @@ import { HomeComponent } from './components/home/home.component';
 import { OfferProgressLineComponent } from './components/offer-details/offer-progress-line/offer-progress-line.component';
 import { OfferDescriptionComponent } from './components/offer-details/offer-description/offer-description.component';
 import { OfferMapComponent } from './components/offer-details/offer-map/offer-map.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+
 
 @NgModule({
 
@@ -46,6 +48,8 @@ import { OfferMapComponent } from './components/offer-details/offer-map/offer-ma
     OfferProgressLineComponent,
     OfferDescriptionComponent,
     OfferMapComponent,
+    DashboardComponent,
+
   ],
   imports: [
     BrowserModule,
