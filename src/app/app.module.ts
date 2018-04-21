@@ -26,6 +26,7 @@ import { OfferProgressLineComponent } from './components/offer-details/offer-pro
 import { OfferDescriptionComponent } from './components/offer-details/offer-description/offer-description.component';
 import { OfferMapComponent } from './components/offer-details/offer-map/offer-map.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { LoginPageComponent } from './components/login-page/login-page.component';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     OfferDescriptionComponent,
     OfferMapComponent,
     DashboardComponent,
+    LoginPageComponent,
 
   ],
   imports: [

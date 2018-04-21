@@ -1,0 +1,11 @@
+.signInWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+
+    .form-signin {
+        .form-control {
+            margin-bottom: 20px;
+        }
+    }
+}
