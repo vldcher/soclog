@@ -25,6 +25,12 @@ import { HomeComponent } from './components/home/home.component';
 import { OfferProgressLineComponent } from './components/offer-details/offer-progress-line/offer-progress-line.component';
 import { OfferDescriptionComponent } from './components/offer-details/offer-description/offer-description.component';
 import { OfferMapComponent } from './components/offer-details/offer-map/offer-map.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { LoginPageComponent } from './components/login-page/login-page.component';
+import { DashboardHeaderComponent } from './components/dashboard/dashboard-header/dashboard-header.component';
+import { UserPresentationComponent } from './components/dashboard/user-presentation/user-presentation.component';
+import { UserExperienceComponent } from './components/dashboard/user-experience/user-experience.component';
+
 
 @NgModule({
 
@@ -46,6 +52,12 @@ import { OfferMapComponent } from './components/offer-details/offer-map/offer-ma
     OfferProgressLineComponent,
     OfferDescriptionComponent,
     OfferMapComponent,
+    DashboardComponent,
+    LoginPageComponent,
+    DashboardHeaderComponent,
+    UserPresentationComponent,
+    UserExperienceComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,7 @@ import { AgmCoreModule } from '@agm/core';
 export class OfferMapComponent implements OnInit {
 
   title: 'My first AGM project';
+
   lat = 51.678418;
   lng = 7.809007;
   locationChosen = false;
