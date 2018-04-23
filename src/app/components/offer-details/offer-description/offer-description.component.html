@@ -3,19 +3,19 @@
   <hr>
   <div class="form-group">
     <label class="form__labels" for="pickUp">Pick-up</label>
-    <input type="text" class="form-control" id="fromPoint" aria-describedby="emailHelp" placeholder="Example: Kyiv">
+    <input type="text" class="form-control" id="fromPoint" aria-describedby="emailHelp" placeholder="Example: Kyiv" #fromInput>
     <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
   </div>
   <div class="form-group">
     <label class="form__labels" for="DropOff">Drop-off</label>
-    <input type="text" class="form-control" id="toPoint" placeholder="Example: Lviv">
+    <input type="text" class="form-control" id="toPoint" placeholder="Example: Lviv" #toInput>
   </div>
 
   <div class="form-group">
     <label class="form__labels" for="DropOff" placement="right" ngbTooltip="A point where you can pick up or drop off cargo along the way.">Stopovers:</label>
     <p>Now add your stopover points - offering to pick up and drop off cargo along
       <br> the way is a sure way to fill your car.</p>
-    <input type="text" class="form-control" id="stopOverPoint" placeholder="Drive through: Rivne">
+    <input type="text" class="form-control" id="stopOverPoint" placeholder="Drive through: Rivne" #wayPoint>
     <p class="addStopOver">+ add more stopover points</p>
   </div>
 
@@ -29,7 +29,16 @@
     <label class="form__labels" for="pickUp">Arrived date/time:</label>
     <input id="datetimeFinish" class="form-control" type="datetime-local">
   </div>
-
-
   <button type="submit" class="btn btn-primary">Continue</button>
 </form>
+<ul *ngIf="wayPoints?.length > 0">
+  <li *ngFor="let waypoint of wayPoints">
+     <span> Place : {{waypoint.location}}</span><span (click)="deleteWayPoint(waypoint)">x</span>
+  </li>
+</ul>
+<p>
+  total distance : {{distance}}
+</p>
+<div id="map" #map>
+  map
+</div>

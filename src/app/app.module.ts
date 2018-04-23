@@ -62,10 +62,7 @@ import { UserExperienceComponent } from './components/dashboard/user-experience/
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule.forRoot(),
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyDMwof2kUaCcA944HOuQ-dkYyU_IoOvI_Y'
-    })
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
