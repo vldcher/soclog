@@ -13,11 +13,22 @@
             font-size: 18px;
             color: #137ea8;
         }
-        .addStopOver {
+        .stopOver {
             color: 	#9a6356;
+            list-style-type: none;
             &:hover {
                 cursor: pointer;
             }
+            .deleteStopOverPoint {
+                font-size: 22px;
+                color: #9a6356;
+                cursor: pointer;
+                margin-left: 20px;
+            }
+        }
+        .drivingDistance {
+            color: 	#137ea8;
+            font-size: 24px;
         }
     }
 }

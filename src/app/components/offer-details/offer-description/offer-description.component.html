@@ -17,7 +17,15 @@
       <p>Now add your stopover points - offering to pick up and drop off cargo along
         <br> the way is a sure way to fill your car.</p>
       <input type="text" class="form-control" id="stopOverPoint" placeholder="Drive through: Rivne" #wayPoint>
-      <p class="addStopOver">+ add more stopover points</p>
+      <ul *ngIf="wayPoints?.length > 0">
+        <li *ngFor="let waypoint of wayPoints" class="stopOver">
+          <span> Stopover point : {{waypoint.location}}</span>
+          <span class="deleteStopOverPoint" (click)="deleteWayPoint(waypoint)"> x</span>
+        </li>
+      </ul>
+      <p class="drivingDistance">
+        Total driving distance : {{distance}}m
+      </p>
     </div>
 
     <h6 class="formHeader">Date & time</h6>
@@ -32,15 +40,6 @@
     </div>
     <button class="btn btn-primary">Continue</button>
   </form>
-  <ul *ngIf="wayPoints?.length > 0">
-    <li *ngFor="let waypoint of wayPoints">
-      <span> Place : {{waypoint.location}}</span>
-      <span (click)="deleteWayPoint(waypoint)">x</span>
-    </li>
-  </ul>
-  <p>
-    total distance : {{distance}}
-  </p>
 </div>
 <div id="map" #map>
   map
